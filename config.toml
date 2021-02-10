@@ -18,3 +18,6 @@ paginate = 2
     title = "Posts"
     url = "/posts/"
     weight = 0
+
+[Author]
+    name = "Mike MacKinnon"
