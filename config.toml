@@ -1,47 +1,44 @@
 languageCode = "en-us"
-title = "Mike MacKinnon"
-theme = "hugo-notepadium"
+theme = "blackburn"
 publishDir = "docs"
-enableInlineShortcodes = true
-
-summarylength = 10
-enableEmoji = true
-
-[params]
+title = "Mike's Blog"
 author = "Mike"
-description = "My Blog"
+enableRobotsTXT = true
+showReadMore = true
+canonifyurls = true
+paginate = 10
+dateFormat = "02 Jan 2006"
 
-profilePicture = ""
-
+[indexes]
+  tag = "tags"
+  topic = "topics"
 
 [menu]
-
+  # Shown in the side menu.
   [[menu.main]]
-  name = "Posts"
-  weight = 100
-  identifier = "posts"
-  url = "/posts/"
-
+    name = "Home"
+    pre = "<i class='fa fa-home fa-fw'></i>"
+    weight = 1
+    identifier = "home"
+    url = "/"
   [[menu.main]]
-  name = "About"
-  identifier = "about"
-  weight = 300
-  url = "/about/"
+    name = "Posts"
+    pre = "<i class='fa fa-list fa-fw'></i>"
+    weight = 2
+    identifier = "post"
+    url = "/post/"
+  [[menu.main]]
+    name = "About"
+    pre = "<i class='fa fa-user fa-fw'></i>"
+    weight = 3
+    identifier = "about"
+    url = "/about/"
+  [[menu.main]]
+    name = "Contact"
+    pre = "<i class='fa fa-phone fa-fw'></i>"
+    weight = 4
+    url = "/contact/"
 
-[taxonomies]
-  category = "categories"
-  series = "series"
-  tag = "tags"
-
-[markup]
-
-  [markup.highlight]
-  codeFences = true
-  guessSyntax = false
-  hl_Lines = ""
-  lineNoStart = 1
-  lineNos = false
-  lineNumbersInTable = true
-  noClasses = true # if false, you need to provide you own custom CSS
-  style = "monokai"
-  tabWidth = 4
+[social]
+linkedin="*"
+github="*"

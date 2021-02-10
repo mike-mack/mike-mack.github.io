@@ -1,32 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on Mike MacKinnon</title>
+    <title>Tags on Mike&#39;s Blog</title>
     <link>/tags/</link>
-    <description>Recent content in Tags on Mike MacKinnon</description>
+    <description>Recent content in Tags on Mike&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    
-        <atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Tue, 09 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Test Post Two</title>
-      <link>/posts/test-post-two/</link>
-      <pubDate>Tue, 09 Feb 2021 22:46:55 -0500</pubDate>
+      <title>content</title>
+      <link>/tags/content/</link>
+      <pubDate>Tue, 09 Feb 2021 00:00:00 +0000</pubDate>
       
-      <guid>/posts/test-post-two/</guid>
-      <description>&lt;p&gt;This is a test post. Trying out Hugo and seeing how that goes. Fun.&lt;/p&gt;
-</description>
+      <guid>/tags/content/</guid>
+      <description></description>
     </item>
     
     <item>
-      <title>TestPost</title>
-      <link>/testpost/</link>
-      <pubDate>Tue, 09 Feb 2021 20:18:55 -0500</pubDate>
+      <title>test</title>
+      <link>/tags/test/</link>
+      <pubDate>Tue, 09 Feb 2021 00:00:00 +0000</pubDate>
       
-      <guid>/testpost/</guid>
-      <description>&lt;p&gt;A test post&lt;/p&gt;
-</description>
+      <guid>/tags/test/</guid>
+      <description></description>
     </item>
     
   </channel>

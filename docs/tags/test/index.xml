@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Mike&#39;s Blog</title>
-    <link>/</link>
-    <description>Recent content on Mike&#39;s Blog</description>
+    <title>test on Mike&#39;s Blog</title>
+    <link>/tags/test/</link>
+    <description>Recent content in test on Mike&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 09 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 09 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="/tags/test/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Test Post Two</title>
       <link>/post/test-post-two/</link>
@@ -16,15 +16,6 @@
       <description>This is a test post. Trying out Hugo and seeing how that goes. Fun.
 Some more content here.
 And some more here.</description>
-    </item>
-    
-    <item>
-      <title>About</title>
-      <link>/about/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/about/</guid>
-      <description>I am not a robot. Totally a human.</description>
     </item>
     
   </channel>
