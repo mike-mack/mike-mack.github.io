@@ -1,15 +1,20 @@
 baseURL = ""
 languageCode = "en-us"
 title = "Mike MacKinnon"
-theme = "PaperMod"
+theme = "tale"
 publishDir = "docs"
 paginate = 2
 
-[[menu.main]]
-  name = "Contact"
-  weight = 0
-  identifier = "contact" 
-  # this button will refer to a markdown file named "contact" in the content folder
-  pre = "<br />"
-  url = "/contact"
-  
+[menu]
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    title = "About"
+    url = "/about/"
+    weight = 0
+  [[menu.main]]
+    identifier = "posts"
+    name = "Posts"
+    title = "Posts"
+    url = "/posts/"
+    weight = 0
