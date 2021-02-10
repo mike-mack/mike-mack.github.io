@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Mike MacKinnon</title>
-    <link>mike-mackinnon.github.io/posts/</link>
+    <link>mike-mack.github.io/posts/</link>
     <description>Recent content in Posts on Mike MacKinnon</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 09 Feb 2021 22:46:55 -0500</lastBuildDate><atom:link href="mike-mackinnon.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 09 Feb 2021 22:46:55 -0500</lastBuildDate><atom:link href="mike-mack.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Test Post Two</title>
-      <link>mike-mackinnon.github.io/posts/test-post-two/</link>
+      <link>mike-mack.github.io/posts/test-post-two/</link>
       <pubDate>Tue, 09 Feb 2021 22:46:55 -0500</pubDate>
       
-      <guid>mike-mackinnon.github.io/posts/test-post-two/</guid>
+      <guid>mike-mack.github.io/posts/test-post-two/</guid>
       <description>This is a test post. Trying out Hugo and seeing how that goes.</description>
     </item>
     
