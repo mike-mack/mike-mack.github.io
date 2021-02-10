@@ -1,5 +1,15 @@
 baseURL = ""
 languageCode = "en-us"
-title = "My New Hugo Site"
+title = "Mike MacKinnon"
 theme = "PaperMod"
 publishDir = "docs"
+paginate = 2
+
+[[menu.main]]
+  name = "Contact"
+  weight = 0
+  identifier = "contact" 
+  # this button will refer to a markdown file named "contact" in the content folder
+  pre = "<br />"
+  url = "/contact"
+  
