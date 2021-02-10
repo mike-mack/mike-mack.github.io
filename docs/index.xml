@@ -2,26 +2,26 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Mike MacKinnon</title>
-    <link>/</link>
+    <link>mike-mackinnon.github.io/</link>
     <description>Recent content on Mike MacKinnon</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 09 Feb 2021 22:46:55 -0500</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 09 Feb 2021 22:46:55 -0500</lastBuildDate><atom:link href="mike-mackinnon.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Test Post Two</title>
-      <link>/posts/test-post-two/</link>
+      <link>mike-mackinnon.github.io/posts/test-post-two/</link>
       <pubDate>Tue, 09 Feb 2021 22:46:55 -0500</pubDate>
       
-      <guid>/posts/test-post-two/</guid>
-      <description>This is a test post. Trying out Hugo and seeing how that goes. Fun.</description>
+      <guid>mike-mackinnon.github.io/posts/test-post-two/</guid>
+      <description>This is a test post. Trying out Hugo and seeing how that goes.</description>
     </item>
     
     <item>
       <title>TestPost</title>
-      <link>/testpost/</link>
+      <link>mike-mackinnon.github.io/testpost/</link>
       <pubDate>Tue, 09 Feb 2021 20:18:55 -0500</pubDate>
       
-      <guid>/testpost/</guid>
+      <guid>mike-mackinnon.github.io/testpost/</guid>
       <description>A test post</description>
     </item>
     
