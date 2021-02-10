@@ -1,6 +1,6 @@
 languageCode = "en-us"
 title = "Mike MacKinnon"
-theme = "soho"
+theme = "hugo-notepadium"
 publishDir = "docs"
 enableInlineShortcodes = true
 
