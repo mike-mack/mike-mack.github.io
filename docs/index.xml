@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>My New Hugo Site</title>
-    <link>mike-mack.github.io/</link>
-    <description>Recent content on My New Hugo Site</description>
+    <title>Mike MacKinnon</title>
+    <link>/</link>
+    <description>Recent content on Mike MacKinnon</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="mike-mack.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>TestPost</title>
-      <link>mike-mack.github.io/testpost/</link>
+      <link>/testpost/</link>
       <pubDate>Tue, 09 Feb 2021 20:18:55 -0500</pubDate>
       
-      <guid>mike-mack.github.io/testpost/</guid>
+      <guid>/testpost/</guid>
       <description>A test post</description>
     </item>
     
