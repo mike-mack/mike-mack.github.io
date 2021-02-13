@@ -1,45 +1,14 @@
 languageCode = "en-us"
-theme = "blackburn"
+theme = "hugo-notepadium"
 publishDir = "docs"
-title = "Mike's Blog"
-author = "Mike"
-enableRobotsTXT = true
-showReadMore = true
 canonifyURLs = false
 relativeURLs = true
-paginate = 10
-dateFormat = "02 Jan 2006"
+title = "Technical Notes"
 
-[indexes]
-  tag = "tags"
-  topic = "topics"
+[params.nav]
+showCategories = false
+showTags = true
 
-[menu]
-  # Shown in the side menu.
-  [[menu.main]]
-    name = "Home"
-    pre = "<i class='fa fa-home fa-fw'></i>"
-    weight = 1
-    identifier = "home"
-    url = "/"
-  [[menu.main]]
-    name = "Posts"
-    pre = "<i class='fa fa-list fa-fw'></i>"
-    weight = 2
-    identifier = "post"
-    url = "/post/"
-  [[menu.main]]
-    name = "About"
-    pre = "<i class='fa fa-user fa-fw'></i>"
-    weight = 3
-    identifier = "about"
-    url = "/about/"
-  [[menu.main]]
-    name = "Contact"
-    pre = "<i class='fa fa-phone fa-fw'></i>"
-    weight = 4
-    url = "/contact/"
-
-[social]
-linkedin="mjmackinnon"
-github="mike-mack"
+[[params.nav.custom]]
+title = "About"
+url = "/about"

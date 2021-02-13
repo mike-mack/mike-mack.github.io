@@ -1,28 +1,36 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on Mike&#39;s Blog</title>
+    <title>Tags on Technical Notes</title>
     <link>/tags/</link>
-    <description>Recent content in Tags on Mike&#39;s Blog</description>
+    <description>Recent content in Tags on Technical Notes</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 09 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 09 Feb 2021 00:00:00 +0000</lastBuildDate>
+    
+        <atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
     <item>
-      <title>content</title>
-      <link>/tags/content/</link>
+      <title>Test Post Two</title>
+      <link>/post/test-post-two/</link>
       <pubDate>Tue, 09 Feb 2021 00:00:00 +0000</pubDate>
       
-      <guid>/tags/content/</guid>
-      <description></description>
+      <guid>/post/test-post-two/</guid>
+      <description>&lt;p&gt;This is a test post. Trying out Hugo and seeing how that goes. Fun.&lt;/p&gt;
+&lt;p&gt;Some more content here.&lt;/p&gt;
+&lt;p&gt;And some more here.&lt;/p&gt;
+&lt;p&gt;Finally, here is some content.&lt;/p&gt;
+</description>
     </item>
     
     <item>
-      <title>test</title>
-      <link>/tags/test/</link>
-      <pubDate>Tue, 09 Feb 2021 00:00:00 +0000</pubDate>
+      <title>About</title>
+      <link>/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/tags/test/</guid>
-      <description></description>
+      <guid>/about/</guid>
+      <description>&lt;p&gt;I am not a robot. Totally a human.&lt;/p&gt;
+</description>
     </item>
     
   </channel>
