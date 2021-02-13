@@ -5,6 +5,9 @@ canonifyURLs = false
 relativeURLs = true
 title = "Technical Notes"
 
+[params.assets]
+css = ["css/custom.css"]
+
 [params.nav]
 showCategories = false
 showTags = true
