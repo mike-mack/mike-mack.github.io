@@ -3,7 +3,8 @@ theme = "hugo-notepadium"
 publishDir = "docs"
 canonifyURLs = false
 relativeURLs = true
-title = "Technical Notes"
+title = "Mike's Blog"
+slogan = "Some technical notes"
 
 [params.assets]
 css = ["css/custom.css"]
