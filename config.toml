@@ -1,17 +1,17 @@
 languageCode = "en-us"
-theme = "hugo-notepadium"
+theme = "hugo-blog-awesome"
 publishDir = "docs"
 canonifyURLs = false
 relativeURLs = true
-title = "Mike's Blog"
-slogan = "Some technical notes"
+title = ""
+slogan = ""
 
 [params.assets]
 css = ["css/custom.css"]
 
 [params.nav]
-showCategories = false
-showTags = true
+showCategories = true
+showTags = false
 
 [[params.nav.custom]]
 title = "About"

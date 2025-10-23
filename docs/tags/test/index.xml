@@ -1,44 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>test on Mike&#39;s Blog</title>
-    <link>/tags/test/</link>
-    <description>Recent content in test on Mike&#39;s Blog</description>
+    <title>Test on </title>
+    <link>//localhost:1313/tags/test/</link>
+    <description>Recent content in Test on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 09 Feb 2021 00:00:00 +0000</lastBuildDate>
-    
-        <atom:link href="/tags/test/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Tue, 09 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="//localhost:1313/tags/test/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Test Post Two</title>
-      <link>/post/test-post-two/</link>
+      <link>//localhost:1313/post/test-post-two/</link>
       <pubDate>Tue, 09 Feb 2021 00:00:00 +0000</pubDate>
       
-      <guid>/post/test-post-two/</guid>
-      <description>&lt;p&gt;This is a test post. Trying out Hugo and seeing how that goes. Fun.&lt;/p&gt;
-&lt;p&gt;Some more content here.&lt;/p&gt;
-&lt;p&gt;And some more here.&lt;/p&gt;
-&lt;p&gt;Finally, here is some content.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>About Me</title>
-      <link>/about/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/post/test-post-two/</guid>
       
-      <guid>/about/</guid>
-      <description>&lt;p&gt;Hi - I&amp;rsquo;m Mike.&lt;/p&gt;
-&lt;p&gt;I&amp;rsquo;m a data engineer and - you guessed it - this is my personal site. I use writing to explain technical topics to myself and to keep track of what I&amp;rsquo;m learning. In the event someone actually reads content on this site, I hope some of it&amp;rsquo;s useful to you.&lt;/p&gt;
-&lt;p&gt;You can get a better idea of my skills and experience from LinkedIn (see below) but in general I work in a Hadoop/Spark environment. Lots of Python, Java and a bit of Scala too.&lt;/p&gt;
-&lt;h2 id=&#34;contact-info&#34;&gt;Contact Info&lt;/h2&gt;
-&lt;p&gt;If you&amp;rsquo;d like to contact me, these are your best options:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.linkedin.com/in/mjmackinnon/&#34;&gt;https://www.linkedin.com/in/mjmackinnon/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/mike-mack&#34;&gt;https://github.com/mike-mack&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+      <description>&lt;p&gt;Content for blog.&lt;/p&gt;</description>
+      
     </item>
     
   </channel>

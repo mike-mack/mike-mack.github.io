@@ -1,10 +1,30 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-  xmlns:xhtml="http://www.w3.org/1999/xhtml"><url>
-    <loc>/tags/content/</loc><lastmod>2021-02-09T00:00:00+00:00</lastmod></url><url>
-    <loc>/</loc><lastmod>2021-02-09T00:00:00+00:00</lastmod></url><url>
-    <loc>/post/</loc><lastmod>2021-02-09T00:00:00+00:00</lastmod></url><url>
-    <loc>/tags/</loc><lastmod>2021-02-09T00:00:00+00:00</lastmod></url><url>
-    <loc>/tags/test/</loc><lastmod>2021-02-09T00:00:00+00:00</lastmod></url><url>
-    <loc>/post/test-post-two/</loc><lastmod>2021-02-09T00:00:00+00:00</lastmod></url><url>
-    <loc>/about/</loc></url><url>
-    <loc>/categories/</loc></url></urlset>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>//localhost:1313/</loc>
+    <lastmod>2025-10-23T17:58:53-04:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/post/</loc>
+    <lastmod>2025-10-23T17:58:53-04:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/post/test-page/</loc>
+    <lastmod>2025-10-23T17:58:53-04:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/tags/content/</loc>
+    <lastmod>2021-02-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/tags/</loc>
+    <lastmod>2021-02-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/tags/test/</loc>
+    <lastmod>2021-02-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/post/test-post-two/</loc>
+    <lastmod>2021-02-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/about/</loc>
+  </url><url>
+    <loc>//localhost:1313/categories/</loc>
+  </url>
+</urlset>
