@@ -2,17 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title></title>
-    <link>//localhost:1313/</link>
+    <link>/</link>
     <description>Recent content on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 23 Oct 2025 17:58:53 -0400</lastBuildDate><atom:link href="//localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 25 Oct 2025 16:29:51 -0400</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>RAG Improvements</title>
+      <link>/post/rag-improvements/</link>
+      <pubDate>Sat, 25 Oct 2025 16:29:51 -0400</pubDate>
+      
+      <guid>/post/rag-improvements/</guid>
+      
+      <description>&lt;h2 id=&#34;a-basic-pipeline&#34;&gt;A Basic Pipeline&lt;/h2&gt;
+&lt;p&gt;A Retrieval-Augmented Generation (RAG) pipeline consists of four main parts: ingestion, storage, retrieval, and generation. To optimize it, start with a simple local setup using LangChain 1.0 and lightweight models. This baseline will serve as the foundation for all further experiments.&lt;/p&gt;
+&lt;p&gt;The goal is to build a fully local RAG pipeline with a local embedding model, a vector database (FAISS or Chroma), a local LLM such as Ollama, and a small text dataset. This setup lets you measure latency, memory use, and context quality, debug each component independently, and verify end-to-end ingestion and retrieval.&lt;/p&gt;</description>
+      
+    </item>
+    
     <item>
       <title>Test Page</title>
-      <link>//localhost:1313/post/test-page/</link>
+      <link>/post/test-page/</link>
       <pubDate>Thu, 23 Oct 2025 17:58:53 -0400</pubDate>
       
-      <guid>//localhost:1313/post/test-page/</guid>
+      <guid>/post/test-page/</guid>
       
       <description>&lt;p&gt;A test page.&lt;/p&gt;</description>
       
@@ -20,10 +33,10 @@
     
     <item>
       <title>Test Post Two</title>
-      <link>//localhost:1313/post/test-post-two/</link>
+      <link>/post/test-post-two/</link>
       <pubDate>Tue, 09 Feb 2021 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/post/test-post-two/</guid>
+      <guid>/post/test-post-two/</guid>
       
       <description>&lt;p&gt;Content for blog.&lt;/p&gt;</description>
       
@@ -31,10 +44,10 @@
     
     <item>
       <title>About</title>
-      <link>//localhost:1313/about/</link>
+      <link>/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/about/</guid>
+      <guid>/about/</guid>
       
       <description></description>
       

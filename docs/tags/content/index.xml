@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Content on </title>
-    <link>//localhost:1313/tags/content/</link>
+    <link>/tags/content/</link>
     <description>Recent content in Content on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 09 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="//localhost:1313/tags/content/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 09 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="/tags/content/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Test Post Two</title>
-      <link>//localhost:1313/post/test-post-two/</link>
+      <link>/post/test-post-two/</link>
       <pubDate>Tue, 09 Feb 2021 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/post/test-post-two/</guid>
+      <guid>/post/test-post-two/</guid>
       
       <description>&lt;p&gt;Content for blog.&lt;/p&gt;</description>
       
