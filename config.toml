@@ -3,8 +3,8 @@ theme = "hugo-blog-awesome"
 publishDir = "docs"
 canonifyURLs = false
 relativeURLs = true
-title = ""
-slogan = ""
+title = "michaelmackinnon.io"
+slogan = "Security Engineering Notes"
 
 [params.assets]
 css = ["css/custom.css"]
