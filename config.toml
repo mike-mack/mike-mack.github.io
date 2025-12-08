@@ -16,3 +16,19 @@ showTags = false
 [[params.nav.custom]]
 title = "About"
 url = "/about"
+
+[Languages.en-gb.params]
+  defaultColor = "dark" # set color mode: dark, light, auto
+
+  [[Languages.en-gb.menu.main]]
+    pageRef="about"
+    name = 'About'
+    url = '/about/'
+    weight = 30
+
+[Languages.en-gb.params.author]
+  avatar = "avatar.png" # put the file in assets folder; also ensure that image has same height and width
+  # Note: image is not rendered if the resource(avatar image) is not found. No error is displayed.
+  intro = "Security Engineering"
+  name = "Michael MacKinnon"
+  description = "I build and harden backend systems, focusing on real-world failure and security."

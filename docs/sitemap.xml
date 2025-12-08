@@ -3,13 +3,10 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>/</loc>
-    <lastmod>2025-10-25T16:29:51-04:00</lastmod>
+    <lastmod>2025-10-31T18:54:26-04:00</lastmod>
   </url><url>
     <loc>/post/</loc>
-    <lastmod>2025-10-25T16:29:51-04:00</lastmod>
-  </url><url>
-    <loc>/post/rag-improvements/</loc>
-    <lastmod>2025-10-25T16:29:51-04:00</lastmod>
+    <lastmod>2025-10-31T18:54:26-04:00</lastmod>
   </url><url>
     <loc>/post/test-page/</loc>
     <lastmod>2025-10-23T17:58:53-04:00</lastmod>
@@ -26,8 +23,10 @@
     <loc>/post/test-post-two/</loc>
     <lastmod>2021-02-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/about/</loc>
+    <loc>/pages/about/</loc>
   </url><url>
     <loc>/categories/</loc>
+  </url><url>
+    <loc>/pages/</loc>
   </url>
 </urlset>
