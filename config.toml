@@ -19,7 +19,18 @@ url = "/about"
 
 [Languages.en-gb.params]
   defaultColor = "dark" # set color mode: dark, light, auto
-
+  [[Languages.en-gb.menu.main]]
+    # The page reference (pageRef) is useful for menu highlighting
+    # When pageRef is set, setting `url` is optional; it will be used as a fallback if the page is not found.
+    pageRef="/"
+    name = 'Home'
+    url = '/'
+    weight = 10
+  [[Languages.en-gb.menu.main]]
+    pageRef="posts"
+    name = 'Posts'
+    url = '/post/'
+    weight = 20
   [[Languages.en-gb.menu.main]]
     pageRef="about"
     name = 'About'
@@ -32,3 +43,11 @@ url = "/about"
   intro = "Security Engineering"
   name = "Michael MacKinnon"
   description = "I build and harden backend systems, focusing on real-world failure and security."
+
+[[params.socialIcons]]
+name = "github"
+url = "https://github.com/mike-mack"
+
+[[params.socialIcons]]
+name = "linkedin"
+url = "www.linkedin.com/in/mjmackinnon"
