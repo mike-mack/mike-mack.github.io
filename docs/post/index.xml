@@ -6,7 +6,19 @@
     <description>Recent content in Posts on michaelmackinnon.io</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
-    <lastBuildDate>Wed, 10 Dec 2025 09:50:22 -0500</lastBuildDate><atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 11 Dec 2025 10:28:06 -0500</lastBuildDate><atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>15 Minute Threat Modelling</title>
+      <link>/post/simple-threat-model/</link>
+      <pubDate>Thu, 11 Dec 2025 10:28:06 -0500</pubDate>
+      
+      <guid>/post/simple-threat-model/</guid>
+      
+      <description>&lt;h5 id=&#34;neglected-security&#34;&gt;Neglected Security&lt;/h5&gt;
+&lt;p&gt;You don&amp;rsquo;t have to look very hard to find an insecure product on ProductHunt. Small teams working on new products often neglect security. They don&amp;rsquo;t have security expertise. They don&amp;rsquo;t have the budget to hire that expertise. And they understandably want to prioritize iteration and speed. Threat modelling can feel so daunting and heavy that it gets deprioritized. After all, for a new product, market risk is what will kill the business, right?&lt;/p&gt;</description>
+      
+    </item>
+    
     <item>
       <title>Local SBOM Toolchains for Dev Environments</title>
       <link>/post/local-sbom/</link>
