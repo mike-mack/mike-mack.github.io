@@ -2,26 +2,29 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>/tags/dependencies/</loc>
+    <lastmod>2025-12-10T09:50:22-05:00</lastmod>
+  </url><url>
+    <loc>/post/local-sbom/</loc>
+    <lastmod>2025-12-10T09:50:22-05:00</lastmod>
+  </url><url>
     <loc>/</loc>
-    <lastmod>2025-10-31T18:54:26-04:00</lastmod>
+    <lastmod>2025-12-10T09:50:22-05:00</lastmod>
   </url><url>
     <loc>/post/</loc>
-    <lastmod>2025-10-31T18:54:26-04:00</lastmod>
+    <lastmod>2025-12-10T09:50:22-05:00</lastmod>
   </url><url>
-    <loc>/post/test-page/</loc>
-    <lastmod>2025-10-23T17:58:53-04:00</lastmod>
+    <loc>/tags/security/</loc>
+    <lastmod>2025-12-10T09:50:22-05:00</lastmod>
   </url><url>
-    <loc>/tags/content/</loc>
-    <lastmod>2021-02-09T00:00:00+00:00</lastmod>
+    <loc>/tags/supply-chain/</loc>
+    <lastmod>2025-12-10T09:50:22-05:00</lastmod>
   </url><url>
     <loc>/tags/</loc>
-    <lastmod>2021-02-09T00:00:00+00:00</lastmod>
+    <lastmod>2025-12-10T09:50:22-05:00</lastmod>
   </url><url>
-    <loc>/tags/test/</loc>
-    <lastmod>2021-02-09T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/post/test-post-two/</loc>
-    <lastmod>2021-02-09T00:00:00+00:00</lastmod>
+    <loc>/post/rag-concepts/</loc>
+    <lastmod>2025-10-23T19:00:21-04:00</lastmod>
   </url><url>
     <loc>/pages/about/</loc>
   </url><url>

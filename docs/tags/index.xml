@@ -6,24 +6,35 @@
     <description>Recent content in Tags on michaelmackinnon.io</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
-    <lastBuildDate>Tue, 09 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 10 Dec 2025 09:50:22 -0500</lastBuildDate><atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Content</title>
-      <link>/tags/content/</link>
-      <pubDate>Tue, 09 Feb 2021 00:00:00 +0000</pubDate>
+      <title>Dependencies</title>
+      <link>/tags/dependencies/</link>
+      <pubDate>Wed, 10 Dec 2025 09:50:22 -0500</pubDate>
       
-      <guid>/tags/content/</guid>
+      <guid>/tags/dependencies/</guid>
       
       <description></description>
       
     </item>
     
     <item>
-      <title>Test</title>
-      <link>/tags/test/</link>
-      <pubDate>Tue, 09 Feb 2021 00:00:00 +0000</pubDate>
+      <title>Security</title>
+      <link>/tags/security/</link>
+      <pubDate>Wed, 10 Dec 2025 09:50:22 -0500</pubDate>
       
-      <guid>/tags/test/</guid>
+      <guid>/tags/security/</guid>
+      
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Supply-Chain</title>
+      <link>/tags/supply-chain/</link>
+      <pubDate>Wed, 10 Dec 2025 09:50:22 -0500</pubDate>
+      
+      <guid>/tags/supply-chain/</guid>
       
       <description></description>
       

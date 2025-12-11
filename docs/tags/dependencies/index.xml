@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on michaelmackinnon.io</title>
-    <link>/post/</link>
-    <description>Recent content in Posts on michaelmackinnon.io</description>
+    <title>Dependencies on michaelmackinnon.io</title>
+    <link>/tags/dependencies/</link>
+    <description>Recent content in Dependencies on michaelmackinnon.io</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
-    <lastBuildDate>Wed, 10 Dec 2025 09:50:22 -0500</lastBuildDate><atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 10 Dec 2025 09:50:22 -0500</lastBuildDate><atom:link href="/tags/dependencies/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Local SBOM Toolchains for Dev Environments</title>
       <link>/post/local-sbom/</link>
@@ -16,17 +16,6 @@
       
       <description>&lt;p&gt;Modern applications pull in hundreds of dependencies. Security teams demand visibility, but developers often discover vulnerabilities too late, during CI/CD or even in production. The fix: catch issues locally by building a small, open-source SBOM toolchain.&lt;/p&gt;
 &lt;p&gt;If your dev environment is blind to dependencies, you’ll fail security checks later. That’s wasted time, risk, and frustration. A local SBOM setup gives you visibility and actionable feedback before anything hits CI/CD or production.&lt;/p&gt;</description>
-      
-    </item>
-    
-    <item>
-      <title>Rag Concepts</title>
-      <link>/post/rag-concepts/</link>
-      <pubDate>Thu, 23 Oct 2025 19:00:21 -0400</pubDate>
-      
-      <guid>/post/rag-concepts/</guid>
-      
-      <description></description>
       
     </item>
     
