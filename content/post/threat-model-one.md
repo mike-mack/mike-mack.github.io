@@ -1,7 +1,7 @@
 ---
 title: "Threat Modelling: Part One"
 date: 2026-04-26
-draft: true
+draft: false
 tags: ["skill", "security"]
 ---
 
