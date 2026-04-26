@@ -6,7 +6,19 @@
     <description>Recent content in Security on michaelmackinnon.io</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
-    <lastBuildDate>Thu, 11 Dec 2025 10:28:06 -0500</lastBuildDate><atom:link href="/tags/security/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 26 Apr 2026 00:00:00 +0000</lastBuildDate><atom:link href="/tags/security/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Threat Modeling: Part One</title>
+      <link>/post/threat-model-one/</link>
+      <pubDate>Sun, 26 Apr 2026 00:00:00 +0000</pubDate>
+      
+      <guid>/post/threat-model-one/</guid>
+      
+      <description>&lt;p&gt;I want to improve my threat modeling skills.&lt;/p&gt;
+&lt;p&gt;So far I have read the first section of Adam Shostack&amp;rsquo;s book Threat Modeling: Designing for Security. You have many threat modeling resources to choose from. I chose this resource because it is widely recognized as an excellent stand alone book covering the skill of threat modeling in detail. So far it has lived up to its reputation. Shostack breaks down threat modeling into its component parts and explains them in an orderly sequence.&lt;/p&gt;</description>
+      
+    </item>
+    
     <item>
       <title>15 Minute Threat Modelling</title>
       <link>/post/simple-threat-model/</link>

@@ -8,16 +8,22 @@
     <loc>/post/</loc>
     <lastmod>2026-04-26T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>/tags/security/</loc>
+    <lastmod>2026-04-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/tags/skill/</loc>
+    <lastmod>2026-04-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/tags/</loc>
+    <lastmod>2026-04-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/post/threat-model-one/</loc>
+    <lastmod>2026-04-26T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>/post/oauth-choice/</loc>
     <lastmod>2026-01-01T17:00:21-08:00</lastmod>
   </url><url>
     <loc>/post/simple-threat-model/</loc>
-    <lastmod>2025-12-11T10:28:06-05:00</lastmod>
-  </url><url>
-    <loc>/tags/security/</loc>
-    <lastmod>2025-12-11T10:28:06-05:00</lastmod>
-  </url><url>
-    <loc>/tags/</loc>
     <lastmod>2025-12-11T10:28:06-05:00</lastmod>
   </url><url>
     <loc>/tags/dependencies/</loc>

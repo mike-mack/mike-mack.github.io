@@ -8,6 +8,18 @@
     <language>en-gb</language>
     <lastBuildDate>Sun, 26 Apr 2026 00:00:00 +0000</lastBuildDate><atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Threat Modeling: Part One</title>
+      <link>/post/threat-model-one/</link>
+      <pubDate>Sun, 26 Apr 2026 00:00:00 +0000</pubDate>
+      
+      <guid>/post/threat-model-one/</guid>
+      
+      <description>&lt;p&gt;I want to improve my threat modeling skills.&lt;/p&gt;
+&lt;p&gt;So far I have read the first section of Adam Shostack&amp;rsquo;s book Threat Modeling: Designing for Security. You have many threat modeling resources to choose from. I chose this resource because it is widely recognized as an excellent stand alone book covering the skill of threat modeling in detail. So far it has lived up to its reputation. Shostack breaks down threat modeling into its component parts and explains them in an orderly sequence.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
       <title>Choosing OAuth Grant Types</title>
       <link>/post/oauth-choice/</link>
       <pubDate>Thu, 01 Jan 2026 17:00:21 -0800</pubDate>
