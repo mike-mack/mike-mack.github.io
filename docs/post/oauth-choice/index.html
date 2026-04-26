@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en-gb"><head><meta charset="utf-8">
+<meta http-equiv="content-type" content="text/html">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title itemprop="name">Choosing OAuth Grant Types | michaelmackinnon.io</title>
+<meta property="og:title" content="Choosing OAuth Grant Types | michaelmackinnon.io" />
+<meta name="twitter:title" content="Choosing OAuth Grant Types | michaelmackinnon.io" />
+<meta itemprop="name" content="Choosing OAuth Grant Types | michaelmackinnon.io" />
+<meta name="application-name" content="Choosing OAuth Grant Types | michaelmackinnon.io" />
+<meta property="og:site_name" content="" />
+
+<meta name="description" content="">
+<meta itemprop="description" content="" />
+<meta property="og:description" content="" />
+<meta name="twitter:description" content="" />
+
+<meta property="og:locale" content="en-gb" />
+<meta name="language" content="en-gb" />
+
+  <link rel="alternate" hreflang="en-gb" href="../../post/oauth-choice/" title="" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.152.1">
+
+    
+    <meta property="og:url" content="/post/oauth-choice/">
+  <meta property="og:site_name" content="michaelmackinnon.io">
+  <meta property="og:title" content="Choosing OAuth Grant Types">
+  <meta property="og:description" content="The Flows I’ve Actually Shipped After implementing OAuth flows for SPAs, mobile apps, CLI tools, and server-to-server services, I’ve learned that choosing the wrong grant type creates security vulnerabilities and user experience nightmares. Here’s what actually works in production.
+Authorization Code &#43; PKCE (The Default Choice) This is what I use for nearly everything now: SPAs, mobile apps, native desktop apps, and even traditional server-rendered applications. The flow works like this:">
+  <meta property="og:locale" content="en_gb">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="post">
+    <meta property="article:published_time" content="2026-01-01T17:00:21-08:00">
+    <meta property="article:modified_time" content="2026-01-01T17:00:21-08:00">
+
+
+    
+    
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Choosing OAuth Grant Types">
+  <meta name="twitter:description" content="The Flows I’ve Actually Shipped After implementing OAuth flows for SPAs, mobile apps, CLI tools, and server-to-server services, I’ve learned that choosing the wrong grant type creates security vulnerabilities and user experience nightmares. Here’s what actually works in production.
+Authorization Code &#43; PKCE (The Default Choice) This is what I use for nearly everything now: SPAs, mobile apps, native desktop apps, and even traditional server-rendered applications. The flow works like this:">
+
+
+    
+
+    <link rel="canonical" href="../../post/oauth-choice/">
+    <link href="../../style.min.e390ba7da26222f4dc42a349955d76dbbe44e5ce2535a43de5a70633a0a9ec3c.css" rel="stylesheet">
+    <link href="../../code-highlight.min.706d31975fec544a864cb7f0d847a73ea55ca1df91bf495fd12a177138d807cf.css" rel="stylesheet">
+
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="../../icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../icons/favicon-16x16.png">
+    <link rel="mask-icon" href="../../icons/safari-pinned-tab.svg">
+    <link rel="shortcut icon" href="../../favicon.ico">
+
+
+
+
+<link rel="manifest" href="../../site.webmanifest">
+
+<meta name="msapplication-config" content="/browserconfig.xml">
+<meta name="msapplication-TileColor" content="#2d89ef">
+<meta name="theme-color" content="#434648">
+    <meta name="color-scheme" content="light dark">
+
+    
+    <link rel="icon" type="image/svg+xml" href="../../icons/favicon.svg">
+
+    
+    
+    
+</head>
+<body data-theme = "dark" class="notransition">
+
+<script src="../../js/theme.min.8961c317c5b88b953fe27525839672c9343f1058ab044696ca225656c8ba2ab0.js" integrity="sha256-iWHDF8W4i5U/4nUlg5ZyyTQ/EFirBEaWyiJWVsi6KrA="></script>
+
+<div class="navbar" role="navigation">
+    <nav class="menu" aria-label="Main Navigation">
+        <a href="../../" class="logo">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" 
+viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" 
+stroke-linejoin="round" class="feather feather-home">
+<title>Home</title>
+<path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+<polyline points="9 22 9 12 15 12 15 22"></polyline>
+</svg>
+        </a>
+        <input type="checkbox" id="menu-trigger" class="menu-trigger" />
+        <label for="menu-trigger">
+            <span class="menu-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" stroke="currentColor" fill="none" viewBox="0 0 14 14"><title>Menu</title><path stroke-linecap="round" stroke-linejoin="round" d="M10.595 7L3.40726 7"></path><path stroke-linecap="round" stroke-linejoin="round" d="M10.5096 3.51488L3.49301 3.51488"></path><path stroke-linecap="round" stroke-linejoin="round" d="M10.5096 10.4851H3.49301"></path><path stroke-linecap="round" stroke-linejoin="round" d="M0.5 12.5V1.5C0.5 0.947715 0.947715 0.5 1.5 0.5H12.5C13.0523 0.5 13.5 0.947715 13.5 1.5V12.5C13.5 13.0523 13.0523 13.5 12.5 13.5H1.5C0.947715 13.5 0.5 13.0523 0.5 12.5Z"></path></svg>
+            </span>
+        </label>
+
+        <div class="trigger">
+            <ul class="trigger-container">
+                
+                
+                <li>
+                    <a class="menu-link " href="../../">
+                        Home
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    <a class="menu-link " href="../../post/">
+                        Posts
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    <a class="menu-link " href="../../pages/about/">
+                        About
+                    </a>
+                    
+                </li>
+                
+                <li class="menu-separator">
+                    <span>|</span>
+                </li>
+                
+                
+            </ul>
+            <a id="mode" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" class="mode-sunny" width="21" height="21" viewBox="0 0 14 14" stroke-width="1">
+<title>LIGHT</title><g><circle cx="7" cy="7" r="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></circle><line x1="7" y1="0.5" x2="7" y2="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="2.4" y1="2.4" x2="3.82" y2="3.82" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="0.5" y1="7" x2="2.5" y2="7" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="2.4" y1="11.6" x2="3.82" y2="10.18" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="7" y1="13.5" x2="7" y2="11.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="11.6" y1="11.6" x2="10.18" y2="10.18" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="13.5" y1="7" x2="11.5" y2="7" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="11.6" y1="2.4" x2="10.18" y2="3.82" fill="none" stroke-linecap="round" stroke-linejoin="round"></line></g></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" class="mode-moon" width="21" height="21" viewBox="0 0 14 14" stroke-width="1">
+<title>DARK</title><g><circle cx="7" cy="7" r="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></circle><line x1="7" y1="0.5" x2="7" y2="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="2.4" y1="2.4" x2="3.82" y2="3.82" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="0.5" y1="7" x2="2.5" y2="7" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="2.4" y1="11.6" x2="3.82" y2="10.18" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="7" y1="13.5" x2="7" y2="11.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="11.6" y1="11.6" x2="10.18" y2="10.18" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="13.5" y1="7" x2="11.5" y2="7" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="11.6" y1="2.4" x2="10.18" y2="3.82" fill="none" stroke-linecap="round" stroke-linejoin="round"></line></g></svg>
+            </a>
+        </div>
+    </nav>
+</div>
+
+<div class="wrapper post">
+    <main class="page-content" aria-label="Content">
+        <article>
+            <header class="header">
+                <h1 class="header-title">Choosing OAuth Grant Types</h1>
+                
+                
+                
+                <div class="post-meta">
+                    <time datetime="2026-01-01T17:00:21-08:00" itemprop="datePublished"> 1 Jan 2026 </time>
+                </div>
+                
+            </header>
+            
+            <div class="page-content">
+                <h2 id="the-flows-ive-actually-shipped">The Flows I&rsquo;ve Actually Shipped</h2>
+<p>After implementing OAuth flows for SPAs, mobile apps, CLI tools, and server-to-server services, I&rsquo;ve learned that choosing the wrong grant type creates security vulnerabilities and user experience nightmares. Here&rsquo;s what actually works in production.</p>
+<h3 id="authorization-code--pkce-the-default-choice">Authorization Code + PKCE (The Default Choice)</h3>
+<p>This is what I use for nearly everything now: SPAs, mobile apps, native desktop apps, and even traditional server-rendered applications. The flow works like this:</p>
+<ol>
+<li>Client generates a cryptographically random <code>code_verifier</code> (43-128 characters)</li>
+<li>Client creates <code>code_challenge</code> from the verifier using SHA256</li>
+<li>Client redirects to authorization endpoint with the challenge</li>
+<li>After user authenticates, auth server returns an authorization code</li>
+<li>Client exchanges code for tokens, sending the original <code>code_verifier</code></li>
+<li>Auth server validates that hash(verifier) matches the stored challenge</li>
+</ol>
+<p><strong>Why this matters in practice:</strong> PKCE (RFC 7636) prevents authorization code interception attacks. I shipped a React SPA in 2023 that initially used plain authorization code flow. During security review, we realized that if an attacker could intercept the redirect (through a compromised proxy or malicious browser extension), they could steal the code and exchange it for tokens. With PKCE, the attacker would also need the code_verifier, which never leaves the client.</p>
+<p>The latency cost is negligible—one additional round trip to exchange the code for tokens—but you gain the ability to use refresh tokens safely in public clients. Mobile apps need this for offline access without forcing users to re-authenticate.</p>
+<h3 id="client-credentials-server-to-server">Client Credentials (Server-to-Server)</h3>
+<p>For confidential clients (servers, background jobs, Lambda functions with secure secrets storage), client credentials flow is straightforward: authenticate with client_id and client_secret, receive an access token.</p>
+<p>I use this for microservice-to-microservice communication and scheduled jobs. The critical implementation detail: <strong>never use this flow from browsers or mobile apps</strong>. I once reviewed code where a developer embedded client credentials in a React app to call an API. The secret was visible in the JavaScript bundle. We rotated credentials and migrated to authorization code + PKCE.</p>
+<h3 id="device-authorization-grant-rfc-8628">Device Authorization Grant (RFC 8628)</h3>
+<p>This is for input-constrained devices: smart TVs, CLI tools, IoT devices. The flow:</p>
+<ol>
+<li>Device requests a device code and user code from the authorization server</li>
+<li>Device displays the user code and a URL (e.g., &ldquo;Visit example.com/activate and enter ABC-DEF&rdquo;)</li>
+<li>User goes to that URL on their phone/computer, enters the code, and authenticates</li>
+<li>Device polls the token endpoint until the user completes authentication</li>
+</ol>
+<p>I implemented this for a CLI tool that needed to access a user&rsquo;s cloud resources. The alternative would have been embedding a web server in the CLI to handle redirects, which breaks in environments with firewall restrictions or when users SSH into remote machines. The polling approach works everywhere, though you need to implement exponential backoff to avoid hammering the auth server.</p>
+<h2 id="what-not-to-use-and-why">What Not to Use (and Why)</h2>
+<h3 id="implicit-flow-deprecated">Implicit Flow (Deprecated)</h3>
+<p>The implicit flow returns access tokens directly in the URL fragment after authentication—no authorization code exchange. This seemed efficient when I first learned OAuth, but it&rsquo;s fundamentally broken.</p>
+<p><strong>Real problem:</strong> Tokens appear in browser history, server logs (if fragment isn&rsquo;t handled correctly), and can leak through Referer headers. I audited an application in 2022 that used implicit flow and found access tokens in both the analytics platform (leaked via Referer) and the CDN logs. OAuth 2.1 officially deprecates this flow.</p>
+<p><strong>What developers get wrong:</strong> They choose implicit flow because it has fewer steps and they think PKCE is &ldquo;too complex&rdquo; for their SPA. This is backwards. Authorization code + PKCE is now simpler to implement correctly using modern libraries (like oidc-client-ts) and is more secure.</p>
+<h3 id="resource-owner-password-credentials-ropc">Resource Owner Password Credentials (ROPC)</h3>
+<p>ROPC means the client directly collects the user&rsquo;s username and password and sends them to the authorization server. This defeats the entire purpose of OAuth: delegated authorization without sharing credentials.</p>
+<p><strong>When I used it (and shouldn&rsquo;t have):</strong> In a legacy migration project, we had a mobile app that collected user credentials. Rather than rewriting the authentication UI to use browser-based authorization code flow, we used ROPC &ldquo;temporarily.&rdquo; This created technical debt that took months to fix properly. The app couldn&rsquo;t support SSO, federated identity, or MFA without significant rewrites.</p>
+<p><strong>The only legitimate use case:</strong> First-party, highly trusted applications where the authorization server itself is collecting credentials in its own UI. Even then, authorization code flow is usually better. OAuth 2.1 recommends against ROPC entirely.</p>
+<h2 id="decision-framework">Decision Framework</h2>
+<p>Here&rsquo;s the decision tree I use:</p>
+<p><strong>Is this a server/confidential client with secure secrets storage?</strong><br>
+→ Yes: Client Credentials</p>
+<p><strong>Is this an input-constrained device (TV, CLI, IoT)?</strong><br>
+→ Yes: Device Authorization Grant</p>
+<p><strong>Is this a browser-based SPA, mobile app, or native desktop app?</strong><br>
+→ Yes: Authorization Code + PKCE</p>
+<p><strong>Do you need offline access (refresh tokens)?</strong><br>
+→ Authorization Code + PKCE (request <code>offline_access</code> scope)</p>
+<p><strong>Are you considering implicit flow for any reason?</strong><br>
+→ No. Use Authorization Code + PKCE instead.</p>
+<p><strong>Are you collecting user passwords directly?</strong><br>
+→ Stop. Use Authorization Code + PKCE with browser-based login.</p>
+<h2 id="common-mistakes">Common Mistakes</h2>
+<p><strong>Mistake 1:</strong> Using client credentials from a mobile app because &ldquo;it&rsquo;s simpler.&rdquo; This exposes your client secret to anyone who decompiles the app.</p>
+<p><strong>Mistake 2:</strong> Choosing implicit flow for SPAs because a 2018 tutorial recommended it. That advice predates the widespread adoption of PKCE for public clients.</p>
+<p><strong>Mistake 3:</strong> Implementing custom flows instead of using established grant types. I&rsquo;ve seen developers create &ldquo;lightweight&rdquo; authentication by passing credentials in custom headers. This breaks SSO, federation, and token refresh patterns that OAuth handles standardly.</p>
+<p><strong>Mistake 4:</strong> Not validating redirect URIs strictly. I found an open redirect vulnerability where the auth server accepted any redirect_uri for a client. An attacker could steal authorization codes by manipulating the redirect.</p>
+<h2 id="implementation-checklist">Implementation Checklist</h2>
+<p>When implementing any OAuth flow:</p>
+<ul>
+<li>Validate all redirect URIs against an allowlist (RFC 8252 section 7.3 for native apps)</li>
+<li>Use state parameter to prevent CSRF (RFC 6749 section 10.12)</li>
+<li>Use PKCE even if your client is confidential—defense in depth</li>
+<li>Set appropriate token lifetimes: short-lived access tokens (15-60 minutes), long-lived refresh tokens</li>
+<li>Implement token refresh before expiration to avoid user disruption</li>
+<li>Store tokens securely: httpOnly cookies for server-rendered apps, secure storage APIs for mobile, memory-only for SPAs</li>
+</ul>
+<p>The OAuth specifications (RFC 6749, RFC 7636, RFC 8252) provide the foundation, but implementation details matter. OAuth 2.1 consolidates best practices and deprecates dangerous patterns—follow it as your baseline.</p>
+<p>Choose authorization code + PKCE unless you have a specific reason not to. That&rsquo;s the lesson from shipping OAuth in production.</p>
+
+            </div>
+        </article></main>
+</div>
+<footer class="footer">
+    <span class="footer_item"> </span>
+    &nbsp;
+
+    <div class="footer_social-icons">
+<a href="https://github.com/mike-mack" target="_blank" rel="noopener noreferrer me"
+    title="Github">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+    stroke-linecap="round" stroke-linejoin="round">
+    <path
+        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+    </path>
+</svg>
+</a>
+<a href="www.linkedin.com/in/mjmackinnon" target="_blank" rel="noopener noreferrer me"
+    title="Linkedin">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+    stroke-linecap="round" stroke-linejoin="round">
+    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+    <rect x="2" y="9" width="4" height="12"></rect>
+    <circle cx="4" cy="4" r="2"></circle>
+</svg>
+</a>
+</div>
+    <small class="footer_copyright">
+        © 2026 Michael MacKinnon.
+        Powered by <a href="https://github.com/hugo-sid/hugo-blog-awesome" target="_blank" rel="noopener">Hugo blog awesome</a>.
+    </small>
+</footer>
+
+
+
+
+
+
+
+    
+    <script src="../../js/main.min.4ee188e1744c19816e95a540b2650ed9f033ea0371e74eac8e717355cfca8741.js" integrity="sha256-TuGI4XRMGYFulaVAsmUO2fAz6gNx506sjnFzVc/Kh0E="></script>
+
+    
+
+</body>
+</html>

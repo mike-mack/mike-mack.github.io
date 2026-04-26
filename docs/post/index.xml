@@ -6,7 +6,21 @@
     <description>Recent content in Posts on michaelmackinnon.io</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
-    <lastBuildDate>Thu, 11 Dec 2025 10:28:06 -0500</lastBuildDate><atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 26 Apr 2026 00:00:00 +0000</lastBuildDate><atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Choosing OAuth Grant Types</title>
+      <link>/post/oauth-choice/</link>
+      <pubDate>Thu, 01 Jan 2026 17:00:21 -0800</pubDate>
+      
+      <guid>/post/oauth-choice/</guid>
+      
+      <description>&lt;h2 id=&#34;the-flows-ive-actually-shipped&#34;&gt;The Flows I&amp;rsquo;ve Actually Shipped&lt;/h2&gt;
+&lt;p&gt;After implementing OAuth flows for SPAs, mobile apps, CLI tools, and server-to-server services, I&amp;rsquo;ve learned that choosing the wrong grant type creates security vulnerabilities and user experience nightmares. Here&amp;rsquo;s what actually works in production.&lt;/p&gt;
+&lt;h3 id=&#34;authorization-code--pkce-the-default-choice&#34;&gt;Authorization Code + PKCE (The Default Choice)&lt;/h3&gt;
+&lt;p&gt;This is what I use for nearly everything now: SPAs, mobile apps, native desktop apps, and even traditional server-rendered applications. The flow works like this:&lt;/p&gt;</description>
+      
+    </item>
+    
     <item>
       <title>15 Minute Threat Modelling</title>
       <link>/post/simple-threat-model/</link>
@@ -28,17 +42,6 @@
       
       <description>&lt;p&gt;Modern applications pull in hundreds of dependencies. Security teams demand visibility, but developers often discover vulnerabilities too late, during CI/CD or even in production. The fix: catch issues locally by building a small, open-source SBOM toolchain.&lt;/p&gt;
 &lt;p&gt;If your dev environment is blind to dependencies, you’ll fail security checks later. That’s wasted time, risk, and frustration. A local SBOM setup gives you visibility and actionable feedback before anything hits CI/CD or production.&lt;/p&gt;</description>
-      
-    </item>
-    
-    <item>
-      <title>Rag Concepts</title>
-      <link>/post/rag-concepts/</link>
-      <pubDate>Thu, 23 Oct 2025 19:00:21 -0400</pubDate>
-      
-      <guid>/post/rag-concepts/</guid>
-      
-      <description></description>
       
     </item>
     
